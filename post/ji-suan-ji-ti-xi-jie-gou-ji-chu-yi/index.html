@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>计算机体系结构基础（一） | Gridea</title>
+<meta name="description" content="学习使人快乐">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://JetLag00.github.io/favicon.ico?v=1602158467300">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://JetLag00.github.io/styles/main.css">
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://JetLag00.github.io">Gridea</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="https://JetLag00.github.io" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>计算机体系结构基础（一）</h1>
+            <p class="article-meta">
+              2020-10-08
+              
+                <a href="https://JetLag00.github.io/tag/B3sqH89QQ/" class="badge success">
+                  计算机体系结构基础
+                </a>
+              
+            </p>
+            
+              <img src="https://JetLag00.github.io/post-images/ji-suan-ji-ti-xi-jie-gou-ji-chu-yi.jpg" alt="计算机体系结构基础（一）">
+            
+            <div class="post-content">
+              <p>前言：✏️小白的学习日记</p>
+<!-- more -->
+<p>1.了解计算机💻<br>
+首先我们需要计算机有一个初步认识，什么是计算机？这就要从计算机的发明的根本目的来说，计算机最早是用来做来做军事计算的，所以计算机最主要的是一个“计算器”，随着科技和需求额不断发展，计算机也被不断开发出新的功能，应用在不同的应用场所。主要分类：超级计算机，网络计算机，工业控制计算机，个人电脑，嵌入式计算机等等。</p>
+<!-- more -->
+<p>2.计算机的体系结构<br>
+计算机的结构层次，由上到下：应用程序，操作系统，硬件系统，晶体管。<br>
+接下来就谈一下这四个层次之间的认识及特性和相互联系。<br>
+从最底层开始讲吧：<br>
+🔗晶体管：<br>
+晶体管是一种半导体器件，一般包括：二极管，三极管，场效应管，晶闸管等，在很多情况下说到晶体管是指的三极管。<br>
+功能：检波，整流，放大，开关，稳压，信号调制等，可以用晶体管搭建成具有运算功能的器件等，可以说绝大部分的电子器件设备都离不开晶体管。晶体管就好比建房子的砖。要想更好的了解计算机性能与硬件的关系，就必须先整明白集体管的工作原理和特性曲线等等。</p>
+<!-- more -->
+<p>这里先简单的概述一下，下次详细的做一下整理。<br>
+晶体管最核心的部分就是PN结，所以要简单的了解一下PN结的特性，首先就要知道PN结是什么？</p>
+<p>简单的来说PN结就是分别在纯净硅中掺杂五价元素的N型半导体和掺杂三价元素的P型半导体制作在一起构成了PN结。<br>
+由于掺杂元素的价态和浓度不同，空穴和自由电子的数量也会有一定的差别，会影响产生的空间电荷区的宽度。同时自由电子的移动速度受温度的影响，温度越高，自由电子的移动速度就会更快，产生的电流就会变大。而且PN结还有电容效应，频率会影响结电容的大小，进而影响结电压。由此看来温度和频率对晶体管的影响是比较大的。<br>
+晶体管和硬件之间联系的界面是工艺模型。<br>
+接下来就介绍一下硬件系统：<br>
+🔗硬件系统主要包括：CPU,内存，GPU，南北桥等。<br>
+硬件系统通过ISA（指令系统）与操作系统联系。<br>
+（硬件系统这里感觉理解的不够透彻，感觉没什么要写的 ，先暂时放一下，查查资料再写）</p>
+<!-- more -->
+<p>🔗操作系统：<br>
+其实在自学之前对操作系统的认识仅停留再WINDOS，ANDROD等印象中，感觉就是为软件提供运行环境的。<br>
+现在比较术语话的描述：<br>
+操作系统是管理计算机系统的全部硬件资源包括软件资源及数据资源;控制程序运行;改善人机界面;为其它应用软件提供支持等，使计算机系统所有资源最大限度地发挥作用，为用户提供方便的、有效的、友善的服务界面。<br>
+操作系统与应用程序之间的联系是通过API（应用编程接口）进行的，其实就是各种编程语言。</p>
+<!-- more -->
+<p>🔗应用程序：<br>
+相信大家对应用程序还是比较熟悉的，毕竟对于我们来说，最直接接触的就是应用程序，主要包括：数据库，办公软件，在线应用，视频媒体等。编程人员无需了解硬件系统，只要选择适用的编程语言，就可以设计各种应用程序。</p>
+<!-- more -->
+<p>可以看出我对除了晶体管以外的介绍介绍的感觉没什么要说的，因为所选择的专业问题，对计算机系统结构的其他层次只是了解，但是不深入。再学两天以后再来添加。</p>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://JetLag00.github.io/post/hello-gridea/">
+                <h3 class="post-title">
+                  Hello Gridea
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://JetLag00.github.io/images/avatar.png?v=1602158467300" class="no-responsive avatar">
+    <div class="text-muted">学习使人快乐</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://JetLag00.github.io/post/ji-suan-ji-ti-xi-jie-gou-ji-chu-yi/">计算机体系结构基础（一）</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://JetLag00.github.io/post/about/">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://JetLag00.github.io/post/hello-gridea/">Hello Gridea</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://JetLag00.github.io/tag/B3sqH89QQ/" class="badge secondary">
+          计算机体系结构基础
+        </a>
+      
+        <a href="https://JetLag00.github.io/tag/LmmcqgPGs/" class="badge secondary">
+          Gridea
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://JetLag00.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
+  </body>
+</html>
