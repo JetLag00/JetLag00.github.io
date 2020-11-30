@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>笔试题目整理 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://JetLag00.github.io/favicon.ico?v=1606704212416">
+<link rel="stylesheet" href="https://JetLag00.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="格力电器 硬件工程师笔试题目
+部分题目：
+1.示波器AC耦合和DC 耦合的区别
+直流耦合DC Couping 就是直通，交流直流一起过，并不是去掉了交流分量。
+交流耦合 AC Couping 就是通过隔直电容耦合，去掉了直流分量。
+2.电阻..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://JetLag00.github.io">
+        <img src="https://JetLag00.github.io/images/avatar.png?v=1606704212416" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://JetLag00.github.io" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      学习使人快乐
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://JetLag00.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">笔试题目整理</h2>
+            <div class="post-date">2020-11-29</div>
+            
+            <div class="post-content" v-pre>
+              <p>格力电器 硬件工程师笔试题目<br>
+部分题目：<br>
+1.示波器AC耦合和DC 耦合的区别<br>
+直流耦合DC Couping 就是直通，交流直流一起过，并不是去掉了交流分量。<br>
+交流耦合 AC Couping 就是通过隔直电容耦合，去掉了直流分量。</p>
+<p>2.电阻选型的时候需要注意哪些参数<br>
+电阻值、精度、功率（在实际电路上换算出承受最大电流、最大电压）、封装、温度系数。</p>
+<p>3.在编写蜂鸣器程序的时候需要注意些什么<br>
+有源蜂鸣器的“源”不是指电源，指震荡源。<br>
+有源蜂鸣器贵，因为里面有震荡电路。<br>
+自激蜂鸣器是直流电压驱动的，不需要交流信号进行驱动。<br>
+他激蜂鸣器，由I/O 口进行控制<br>
+他激蜂鸣器，由IPWM 输出口进行控制<br>
+单片机不是驱动功率器件。<br>
+3.普通二极管和电力二极管有什么区别？PSN结构的S层是什么？<br>
+(1)、指代不同<br>
+a、电力二极管：也被称为半导体整流器；它的基本结构和工作原理与信息电子电路中的二极管是一样的，都以半导体PN结为基础，实现正向导通、反向截止的功能<br>
+b、普通二极管：电子元件当中，一种具有两个电极的装置，只允许电流由单一方向流过，许多的使用是应用其整流的功能。<br>
+(2)、特性不同<br>
+a、电力二极管：恢复过程很短特别是反向恢复过程很短（5μs以下）。正向恢复过程中也不会有明显的电压过冲；在反向耐压较低的情况下其正向压降也很小，明显低于快恢复二极管。<br>
+b、普通二极管：最大的特性就是单向导电，也就是电流只可以从二极管的一个方向流过。<br>
+(3)、作用不同<br>
+a、电力二极管：反向耐压提高时其正向压降也会高得不能满足要求，因此多用于200V以下的低压场合。<br>
+b、普通二极管：作用有整流电路，检波电路，稳压电路，各种调制电路，主要都是由二极管来构成的。</p>
+<p>4.在耦合放大器中，在输入信号一定的情况下，为了提高级间耦合的效率必须怎么做？<br>
+加大电容以减小容抗<br>
+5.最大的反向电压是指？<br>
+最高反向工作电压U是二极管工作时允许外加的最大反向电压，超过此值时，二极管有可能因为反向击穿而损坏，通常为击穿电压的一半，注意它是一个瞬时值。<br>
+6.提高模拟器采集精度的设计方法有哪些？</p>
+<p>7.梯度下降的算法步骤<br>
+a.用随机值初始化权重和偏差<br>
+b.把输入传入网络，得到输出值<br>
+c.计算预测值和真实值之间的误差<br>
+d.对每一个产生误差的神经元，调整相应的（权重）值以减小误差<br>
+e.重复迭代，直至得到网络权重的最佳值<br>
+8.MOS管电压控制还是电流控制？<br>
+电压控制元器件，晶体管是电流控制元器件。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://JetLag00.github.io/post/ji-suan-ji-ti-xi-jie-gou-ji-chu-yi/">
+                  <h3 class="post-title">
+                    计算机体系结构基础（一）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
